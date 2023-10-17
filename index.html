@@ -1,0 +1,1758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* body {
+                background-image: linear-gradient(to right bottom, #051937, #0c2a51, #123c6c, #155088, #1464a6, #3360a0, #445b9a, #505793, #4f3d66, #3e273e, #25171f,#000000);
+            } */
+
+
+
+
+        /* *************************FIRST_PAGE************************************************************************ */
+
+
+        body {
+            background-image: linear-gradient(to right, #f3c5ff, #d2a3e7, #b182d1, #8e63bb, #6946a6);
+        }
+
+        /* .firstPage{
+            background-image: linear-gradient(to right, #f3c5ff, #d2a3e7, #b182d1, #8e63bb,#6946a6);
+            z-index: -2;
+            position: relative;
+        } */
+        header {
+            margin-top: 48px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navBar ul {
+            display: flex;
+
+
+
+        }
+
+        .navBar ul li {
+            cursor: pointer;
+            list-style: none;
+            padding: 12px;
+            transition: ease-in;
+        }
+
+        .navBar li:hover {
+            color: white;
+            background-color: rgb(50 9 49);
+            ;
+            border-radius: 20px;
+            font-weight: bold;
+
+        }
+
+        .CV {
+            width: 106px;
+            margin: 12px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 15px;
+            color: white;
+            background-color: hotpink;
+            border: 1px solid white;
+
+
+            /* width: 114px;
+    height: 30px; */
+            border-radius: 82px;
+            cursor: pointer;
+        }
+
+        .CV:hover {
+
+            color: #130813;
+            background-color: whitesmoke;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name h5 {
+            color: white;
+            font-family: cursive;
+            font-size: 50px;
+            line-height: 134px;
+            text-align: center;
+            text-shadow: 2px 3px 5px rgb(50 9 49);
+
+
+        }
+
+        .name span {
+            font-style: italic;
+            color: rgb(50 9 49);
+            text-shadow: 2px 3px 5px white;
+        }
+
+        .name p span {
+            font-style: italic;
+            font-weight: bolder;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(50 9 49);
+            text-shadow: 2px 3px 5px white;
+        }
+
+        .name p {
+            text-align: center;
+            font-weight: bold;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(50 9 49);
+
+        }
+
+        .skillContain {
+            display: flex;
+            width: 100%;
+
+        }
+
+        .skillPic {
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .mainContainer {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+
+            width: 80%;
+            background-color: #f4f4f4;
+            border: 2px solid transparent;
+            border-radius: 50px;
+            margin: 10px 5px;
+            /* border: 2px solid wheat; */
+            /* border: 2px solid pink; */
+        }
+
+        .skillset {
+            font-weight: bold;
+            text-shadow: rgb(50 9 49);
+            text-align: right;
+            color: #efff;
+            padding-right: 5px;
+            padding-left: 5px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+
+
+
+        }
+
+        .web {
+            width: 90%;
+            /* height: 10px; */
+            background-image: linear-gradient(to right, #845ec2, #7652b4, #6846a6, #5b3a98, #4d2e8b, #562d8b, #5d2c8a, #652b89, #823694, #9f429e, #ba4fa8, #d65db1);
+            border: 2px solid transparent;
+            border-radius: 50px;
+        }
+
+        .design {
+            width: 75%;
+            /* height: 10px; */
+            background-image: linear-gradient(to right, #845ec2, #7652b4, #6846a6, #5b3a98, #4d2e8b, #562d8b, #5d2c8a, #652b89, #823694, #9f429e, #ba4fa8, #d65db1);
+            border: 2px solid transparent;
+            border-radius: 50px;
+        }
+
+        .UI {
+            width: 95%;
+            /* height: 10px; */
+            background-image: linear-gradient(to right, #845ec2, #7652b4, #6846a6, #5b3a98, #4d2e8b, #562d8b, #5d2c8a, #652b89, #823694, #9f429e, #ba4fa8, #d65db1);
+            border: 2px solid transparent;
+            border-radius: 50px;
+        }
+
+        .container span {
+            font-size: 14px;
+            color: rgb(50 9 49);
+            text-shadow: 2px 0px 2px white;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+
+        .skillPic img {
+            width: 200px;
+            height: 200px;
+            border: 2px solid transparent;
+            /* border-bottom-right-radius: 61px;
+            border-top-left-radius: 61px;
+            margin-left: 350px; */
+            z-index: -1;
+            opacity: 0.6;
+
+        }
+
+        #skillPicText {
+            position: relative;
+            /* margin-left: 320px; */
+            bottom: 130px;
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: bolder;
+            font-size: 50px;
+            color: rgb(29, 29, 73);
+            text-shadow: 2px 3px 5px whitesmoke;
+
+
+
+        }
+
+        .project {
+            margin-top: 57px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .project span {
+            font-size: 23px;
+            color: #e6dbb7;
+            color: #ffffff;
+        }
+
+        #project-1 {
+            display: flex;
+            border-right: 2px solid grey;
+            width: 269px;
+            height: 40px;
+            justify-content: center;
+        }
+
+        #project-2 {
+            display: flex;
+            border-right: 2px solid grey;
+            width: 252px;
+            height: 40px;
+            justify-content: center;
+        }
+
+        #project-3 {
+            display: flex;
+            border-right: 2px solid grey;
+            width: 252px;
+            height: 40px;
+            justify-content: center;
+        }
+
+        .project span {
+            line-height: 23px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        .project #project-1 i {
+            font-size: 23px;
+        }
+
+        .project #project-2 i {
+            font-size: 23px;
+        }
+
+        .project #project-3 i {
+            font-size: 23px;
+        }
+
+        .fa-plus {
+            font-weight: bolder;
+            color: #ffe7e7;
+        }
+
+        .fa-pipe {
+            font-weight: bolder;
+            color: #ffe7e7;
+        }
+
+        #connect {
+            margin-top: 32px;
+        }
+
+        #connect p {
+            font-size: 23px;
+            font-family: cursive;
+            font-style: italic;
+            width: 200px;
+            margin: auto;
+        }
+
+        .fa-facebook {
+            color: blue;
+            padding: 2px;
+        }
+
+        .fa-instagram {
+            color: rgb(255 2 171);
+            padding: 2px;
+        }
+
+        .fa-twitter {
+            color: #0080ff;
+            padding: 2px;
+        }
+
+        .fa-whatsapp {
+            color: rgb(0 230 0);
+            padding: 2px;
+        }
+
+        .fa-linkedin {
+            color: rgb(19, 16, 196);
+            padding: 2px;
+        }
+
+        .icons {
+            width: 160px;
+            margin: 12px auto;
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        @media screen and (min-width:500px) and (max-width:700px) {
+            .name h5 {
+                font-size: 40px;
+
+            }
+
+            #skillPicText {
+                font-size: 40px;
+            }
+
+            .container span {
+                font-size: 12px;
+            }
+
+            .project span {
+                color: #ffffff;
+            }
+
+            .project #project-1 i {
+                font-size: 20px;
+            }
+
+            .project #project-2 i {
+                font-size: 20px;
+            }
+
+            .project #project-3 i {
+                font-size: 20px;
+            }
+        }
+
+
+
+
+        /* *************************************************CLIENT_SEC******************************************************************* */
+
+
+        .CLIENTS {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .clientHeading {
+            text-align: center;
+            margin-top: -87px;
+            line-height: 71px;
+            padding: 60px;
+        }
+
+        .clientHeading h3 {
+            padding: 10px;
+        }
+
+        .Client-Sec {
+            display: flex;
+            flex-direction: column;
+            width: 900px;
+            height: 900px;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgb(240, 140, 230); */
+            /* margin-top: 10px; */
+        }
+
+        .Client-Sec h3 {
+            /* margin-top: 10px; */
+            font-size: 40px;
+            color: white;
+            text-shadow: 2px 3px 5px black;
+        }
+
+        .Client-Sec #para {
+            color: rgb(33, 5, 58);
+            line-height: 19px;
+
+        }
+
+        #client-1 {
+            display: flex;
+
+            margin: 10px 3px;
+            height: 200px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 15px;
+        }
+
+        #client-2 {
+            display: flex;
+            margin: 10px 3px;
+            height: 200px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 15px;
+        }
+
+        #client-3 {
+            display: flex;
+            margin: 10px 3px;
+            height: 200px;
+            width: 600px;
+            border: 2px solid white;
+            border-radius: 15px;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+            height: 200px;
+            border-right: 2px solid white;
+        }
+
+        .review {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 60%;
+            height: 200px;
+            border-left: 2px solid white;
+
+        }
+
+        .img h5 {
+            color: whitesmoke;
+            text-shadow: 2px 3px 5px purple;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 23px;
+            margin-top: 10px;
+        }
+
+        .img .fa-square-facebook {
+            font-size: 40px;
+            /* margin-top: 23px; */
+            text-shadow: 0px 0px 2px black;
+            color: #0035ff;
+        }
+
+        .img .fa-amazon {
+            font-size: 40px;
+            text-shadow: 0px 3px 7px goldenrod;
+
+        }
+
+        .img .fa-pinterest {
+            font-size: 40px;
+            color: rgb(184, 21, 21);
+
+        }
+
+        .brand {
+            border: 6px solid goldenrod;
+            border-top-right-radius: 22px;
+            border-bottom-left-radius: 22px;
+            height: 95px;
+            width: 100px;
+            margin-top: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fa-quote-left {
+            margin-left: -336px;
+        }
+
+        .fa-quote-right {
+            margin-right: -336px;
+        }
+
+        .review p {
+            padding: 26px;
+
+        }
+
+        @media screen and (min-width:500px) and (max-width:615px) {
+            html {
+                width: 112%;
+            }
+            .project #project-1 i {
+                font-size: 19px;
+            }
+
+            .project #project-2 i {
+                font-size: 19px;
+            }
+
+            .project #project-3 i {
+                font-size: 19px;
+            }
+            .fa-quote-left {
+                margin-left: -241px;
+            }
+
+            .fa-quote-right {
+                margin-right: -217px;
+            }
+
+            #client-1 {
+                width: 460px;
+            }
+
+            #client-2 {
+                width: 460px;
+            }
+
+            #client-3 {
+                width: 460px;
+            }
+
+
+        }
+        @media screen and (min-width:430px) and (max-width:500px) {
+
+            html {
+                width: 150%;
+            }
+            .name h5 {
+                font-size: 40px;
+
+            }
+
+            #skillPicText {
+                font-size: 40px;
+            }
+
+            .container span {
+                font-size: 12px;
+            }
+
+            .fa-quote-left {
+                margin-left: -216px;
+            }
+
+            .fa-quote-right {
+                margin-right: -211px;
+            }
+
+            #client-1 {
+                width: 403px;
+            }
+
+            #client-2 {
+                width: 403px;
+            }
+
+            #client-3 {
+                width: 403px;
+            }
+
+            
+        }
+
+        @media screen and (min-width:350px) and (max-width:430px) {
+            html {
+                width: 204%;
+            }
+            .name h5 {
+                font-size: 40px;
+
+            }
+
+            #skillPicText {
+                font-size: 40px;
+            }
+
+            .container span {
+                font-size: 17px;
+            }
+
+            
+        }
+        @media screen and (min-width:300px) and (max-width:350px){
+            html {
+                width: 191%;
+            }
+            .name h5 {
+                font-size: 40px;
+
+            }
+
+            #skillPicText {
+                font-size: 40px;
+            }
+
+            .container span {
+                font-size: 12px;
+            }
+            .fa-quote-left {
+                margin-left: -216px;
+            }
+
+            .fa-quote-right {
+                margin-right: -211px;
+            }
+
+            #client-1 {
+                width: 403px;
+            }
+
+            #client-2 {
+                width: 403px;
+            }
+
+            #client-3 {
+                width: 403px;
+            }
+
+            
+        }
+
+        
+
+
+
+
+        /* ******************************************WORK SECTION************************************************************ */
+        .work {
+            /* background-color: blanchedalmond; */
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+        }
+
+        .work h2 {
+            font-size: 30px;
+            position: relative;
+            margin-bottom: 45px;
+
+        }
+
+        .work h2::after {
+            content: '';
+            width: 150px;
+            height: 3px;
+            background: linear-gradient(to right, #f44336, #9f4db5);
+            position: absolute;
+            bottom: -20px;
+            left: 50;
+            transform: translateX(-131%);
+        }
+
+        .workBox {
+            width: 90%;
+            max-width: 600px;
+            height: 550px;
+            border-radius: 10px;
+            box-shadow: -10px 10px 40px rgba(0, 0, 0, 0.25);
+            position: relative;
+            overflow: hidden;
+        }
+
+        img {
+            position: relative;
+            /* opacity: 0.3; */
+            /* z-index: -1; */
+            width: 100%;
+            height: 300px;
+        }
+
+        .card {
+            height: 550px;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card h3 {
+            font-size: 23px;
+            color: #f44336;
+            text-decoration: underline;
+        }
+
+        .card h5 {
+            font-size: 20px;
+            color: purple;
+        }
+
+        /* .card p , button{
+            overflow: hidden;
+        } */
+        .card button {
+            position: relative;
+            border: 0;
+            outline: 0;
+            font-family: cursive;
+            background-color: #f44336;
+            color: white;
+            cursor: pointer;
+            bottom: -10px;
+            border-radius: 3px;
+
+        }
+
+        #slide {
+            width: 100%;
+            padding-right: 60px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        .sidebar {
+            width: 60px;
+            height: 100%;
+            padding: 15px 0;
+            background-color: #eaaaff;
+            ;
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar img {
+            background-color: white;
+            border-radius: 50%;
+            width: 25px;
+            height: 37px;
+            padding: 5px;
+            cursor: pointer;
+
+        }
+
+
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            .card h2 {
+                font-size: 16px;
+            }
+
+            .card h5 {
+                font-size: 16px;
+            }
+
+            .card p {
+                font-size: 14px;
+            }
+
+            .card button {
+                font-size: 12px;
+                height: 16px;
+            }
+
+            #slide {
+                padding-right: 40px;
+            }
+
+            .sidebar {
+                width: 40px;
+            }
+
+            img {
+                height: 186px;
+            }
+        }
+
+
+
+
+
+
+
+
+
+
+
+        /* CONTACT****************************************************************** */
+
+        .conTACT {
+            background: linear-gradient(to right bottom, #051937, #0c2a51, #123c6c, #155088, #1464a6, #3360a0, #445b9a, #505793, #4f3d66, #3e273e, #25171f, #000000);
+            /* overflow-y: hidden; */
+
+            width: 100%;
+            height: 700px;
+            /* border: 2px solid white; */
+            display: flex;
+
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        #contactimg {
+            width: 40%;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        #contactimg img {
+            height: 452px;
+            width: 685px;
+        }
+
+        #contactinfo {
+            width: 60%;
+            height: 700px;
+            /* border: 2px solid white; */
+            margin: auto;
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; */
+            overflow: auto;
+        }
+
+        /* #contactinfo h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-family:cursive;
+            font-weight: bolder;
+        }
+        #contactinfo span{
+            text-align: center;
+            font-family:cursive;
+            font-weight: bold;
+            padding: 4px 13px;
+        } */
+
+        /* .form{
+            display: flex;
+            justify-content: center;
+
+        } */
+
+        #contactHeading {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            margin-top: 57px;
+
+
+        }
+
+        #contactHeading h2 {
+            text-transform: uppercase;
+
+            font-family: cursive;
+            font-size: 23px;
+        }
+
+        #line {
+            width: 102px;
+            height: 2px;
+            background-color: goldenrod;
+        }
+
+        #contactHeading span {
+            line-height: 45px;
+            font-size: 23px;
+        }
+
+        #contactinfo-box {
+
+            height: 487px;
+            /* border: 2px solid white; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* flex-direction: column; */
+        }
+
+
+        #contactinfo-box form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 617px;
+            height: 423px;
+            border: 2px solid transparent;
+            border-radius: 57px;
+            background-color: rgba(0, 0, 0, 0.09);
+            box-shadow: inset -5px -5px rgba(0, 0, 0, 0.5);
+            animation-name: border-2;
+            animation-duration: 2s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes border-2 {
+            0% {
+                border-top: 2px solid white;
+            }
+
+            25% {
+                border-right: 2px solid white;
+            }
+
+            50% {
+                border-bottom: 2px solid white;
+            }
+
+            75% {
+                border-left: 2px solid white;
+            }
+
+            100% {
+                border-top: 2px solid white;
+            }
+
+        }
+
+
+
+
+
+        #contactinfo-box #name {
+            color: plum;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 5px 5px;
+            width: 224px;
+            height: 40px;
+            /* border: 0; */
+            outline: 0;
+        }
+
+        #contactinfo-box #email {
+            color: plum;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 5px 5px;
+            width: 224px;
+            height: 40px;
+            outline: 0;
+        }
+
+        .Password {
+            /* background-color: white; */
+            width: 238px;
+            height: 60px;
+            display: flex;
+            margin-left: -12px;
+            align-items: center;
+
+
+
+        }
+
+        .Password img {
+            object-fit: cover;
+            background-color: aliceblue;
+            width: 50px;
+            height: 44px;
+            margin-left: -43px;
+            cursor: pointer;
+            margin-bottom: -2px;
+            border-radius: 5px;
+        }
+
+        #contactinfo-box #password {
+            color: plum;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 5px 10px;
+            width: 235px;
+            height: 43px;
+            outline: 0;
+        }
+
+
+
+
+        #contactinfo-box #mssg {
+            color: plum;
+            font-weight: bolder;
+            font-family: cursive;
+            font-size: 15px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            margin: 5px 5px;
+            width: 224px;
+            height: 140px;
+            outline: 0;
+        }
+
+        #contactinfo-box #submit {
+            display: block;
+            background-color: plum;
+            margin: 5px 5px;
+            height: 20px;
+            width: 80px;
+            margin: auto;
+            /* outline: 0; */
+            /* box-shadow: 2px 3px 5px white; */
+        }
+
+        #contactinfo-box #name:hover {
+            border: 3px solid goldenrod;
+            background-color: white;
+            color: rgb(31, 4, 31);
+        }
+
+        #contactinfo-box #mssg:hover {
+            border: 3px solid goldenrod;
+            background-color: white;
+            color: rgb(31, 4, 31);
+        }
+
+        #contactinfo-box #email:hover {
+            border: 3px solid goldenrod;
+            background-color: white;
+            color: rgb(31, 4, 31);
+        }
+
+        #contactinfo-box #password:hover {
+            border: 3px solid goldenrod;
+            background-color: white;
+            color: rgb(31, 4, 31);
+        }
+
+        /* #contactinfo h2{
+            text-align: center;
+            line-height: 20px;
+            margin-top: 13px;
+        }
+        #contactinfo span{
+            display: flex;
+            flex-direction: row;
+        } */
+
+
+
+
+
+
+        @media screen and (min-width:750px) and (max-width:1120px) {
+            #contactimg {
+                display: none;
+            }
+
+            #contactinfo {
+                width: 100%;
+            }
+
+            .Password {
+                width: 229px;
+                height: 60px;
+            }
+
+            #contactinfo-box #password {
+                width: 224px;
+                height: 43px;
+            }
+
+            .Password img {
+                width: 48px;
+                height: 43px;
+                margin-left: -52px;
+                margin-bottom: 0;
+            }
+
+
+
+        }
+
+        @media screen and (min-width:500px) and (max-width:750px) {
+            #contactimg {
+                display: none;
+            }
+
+            #contactinfo-box form {
+                width: 400px;
+                height: 416px;
+            }
+
+            .Password {
+                width: 229px;
+                height: 60px;
+            }
+
+            #contactinfo-box #password {
+                width: 224px;
+                height: 43px;
+            }
+
+            .Password img {
+                width: 48px;
+                height: 43px;
+                margin-left: -52px;
+                margin-bottom: 0;
+            }
+
+
+
+        }
+
+        @media screen and (min-width:400px) and (max-width:500px) {
+            #contactimg {
+                display: none;
+            }
+
+            #contactinfo-box form {
+                border: none;
+                animation: none;
+                /* width: 300px;
+    height: 416px; */
+            }
+
+            #contactHeading h2 {
+                font-size: 14px;
+            }
+
+            #contactHeading span {
+                font-size: 14px;
+            }
+
+            #contactinfo-box #name {
+                width: 180px;
+            }
+
+            #contactinfo-box #email {
+                width: 182px;
+            }
+
+            .Password {
+                width: 190px;
+            }
+
+            #contactinfo-box #mssg {
+                width: 184px;
+            }
+
+            .Password img {
+                border-radius: 5px;
+                margin-left: -35px;
+                width: 36px;
+                height: 41px;
+            }
+
+            #contactinfo-box #password {
+                width: 176px;
+            }
+
+
+        }
+
+        @media screen and (min-width:300px) and (max-width:400px) {
+            #contactimg {
+                display: none;
+            }
+
+            #contactinfo-box form {
+                border: none;
+                animation: none;
+            }
+
+            #contactHeading h2 {
+                font-size: 14px;
+            }
+
+            #contactHeading span {
+                font-size: 14px;
+            }
+
+            #contactinfo-box #name {
+                width: 162px;
+                font-size: 13px;
+            }
+
+            #contactinfo-box #email {
+                width: 162px;
+                font-size: 13px;
+            }
+
+            .Password {
+                width: 171px;
+            }
+
+            #contactinfo-box #password {
+                width: 162px;
+                font-size: 12px;
+            }
+
+            .Password img {
+                border-radius: 5px;
+                margin-left: -49px;
+                width: 39px;
+            }
+
+            #contactinfo-box #mssg {
+                width: 162px;
+                font-size: 13px;
+            }
+
+
+
+
+
+
+        }
+
+        #contactinfo-box span {
+            /* position: absolute;
+            margin-right: 18px; */
+            color: rgb(241, 71, 71);
+        }
+
+        .Name,
+        .Email,
+        .Msg,
+        .Submit {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #name-error,
+        #email-error,
+        #msg-error {
+            /* margin-left:20px ; */
+            margin: auto;
+        }
+
+        .fa-circle-check {
+            color: rgb(34, 180, 21);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- **********************************FIRST_PAGE******************************************************************** -->
+
+    <div class="firstPage">
+        <header>
+            <nav class="navBar">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Services</li>
+                    <li>Blog</li>
+                    <li>Pages</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+
+            <!-- <input type="text" name="Search" id="Search" placeholder="Search the website"> -->
+            <button class="CV">Download CV</button>
+        </header>
+        <div class="name">
+            <h5>
+                I'm <span>Jeremy Smith</span>
+            </h5>
+            <p> <span>Designer and Developer</span> And I create unique user experiences for the web and mobile.</p>
+        </div>
+        <div class="skillContain">
+
+            <div class="skillPic">
+                <img src="img/firstPage.png" alt="">
+                <div id="skillPicText"><strong>What I Do</strong></div>
+            </div>
+
+            <div class="mainContainer">
+
+                <div class="container">
+                    <div class="web skillset"><span>Web Templates & Responsive Designs</span> &nbsp; 90%</div>
+                </div>
+                <div class="container">
+                    <div class="design skillset"><span>App Design</span> &nbsp;75%</div>
+                </div>
+                <div class="container">
+                    <div class="UI skillset"><span>UI/UX Design</span> &nbsp;95%</div>
+                </div>
+
+            </div>
+            <!-- **************************************************************************************************** -->
+
+
+        </div>
+        <div class="project">
+            <div id="project-1">
+                <span>100</span><i class="fa-duotone fa-plus"></i>
+                <i>Completed Projects </i>&nbsp;<i class="fa-thin fa-pipe"></i>
+            </div>
+            <div id="project-2">
+                <span>75</span><i class="fa-duotone fa-plus"></i>
+                <i>Team Work</i>&nbsp;<i class="fa-thin fa-pipe"></i>
+            </div>
+            <div id="project-3">
+                <span>4</span><i class="fa-duotone fa-plus"></i>
+                <i> Years of Experience</i> &nbsp;
+            </div>
+        </div>
+        <div id="connect">
+            <p>Connect with Me</p>
+            <div class="icons">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- *********************************************CLIENT_SEC************************************************** -->
+
+    <div class="CLIENTS">
+        <div class="Client-Sec">
+            <div class="clientHeading">
+                <h3>My Clients</h3>
+
+                <p id="para">I have had the oppurtunity to work with a diverse group of companies . Some of the notable
+                    companies I have worked with includes: </p>
+            </div>
+            <div id="client-1" data-aos="fade-left">
+                <div class="img">
+                    <h5>Facebook</h5>
+                    <div class="brand">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+
+
+
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus animi odio.</p>
+                    <i class="fa-solid fa-quote-right"></i>
+
+                </div>
+            </div>
+            <div id="client-2" data-aos="fade-right">
+                <div class="img">
+                    <h5>Amazon</h5>
+                    <div class="brand">
+                        <i class="fa-brands fa-amazon"></i>
+                    </div>
+
+
+
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus animi odio.</p>
+                    <i class="fa-solid fa-quote-right"></i>
+
+                </div>
+            </div>
+            <div id="client-3" data-aos="fade-left">
+                <div class="img">
+                    <h5>Pinterest</h5>
+                    <div class="brand">
+                        <i class="fa-brands fa-pinterest"></i>
+                    </div>
+
+
+
+                </div>
+                <div class="review">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium minus animi odio.</p>
+                    <i class="fa-solid fa-quote-right"></i>
+
+                </div>
+
+            </div>
+            <!-- <div id="client-4"></div> -->
+        </div>
+    </div>
+
+
+
+
+
+    <!-- *****************************WORK************************************************* -->
+
+    <div class="work">
+        <h2>Work and Projects</h2>
+        <div class="workBox">
+            <div id="slide">
+                <div class="card">
+
+
+                    <img src="img/work-1.jpg" alt="">
+                    <h3>Digitron:</h3>
+                    <h5>Business Marketing Website</h5>
+                    <p id="para-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum aliquid et, ab
+                        dolorem obcaecati corporis necessitatibus quisquam ducimus deleniti quia suscipit, velit
+                        delectus voluptatem libero.</p>
+                    <button id="details-1">Show Less</button>
+                </div>
+                <div class="card">
+
+
+                    <img src="img/work-2" alt="">
+                    <h3>Friendzy</h3>
+                    <h5>Social Networking app </h5>
+                    <p id="para-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae veritatis sit fugit
+                        sequi mollitia. Sed dolore adipisci nemo harum? Odit mollitia nam dignissimos impedit optio.</p>
+                    <button id="details-2">Show Less</button>
+                </div>
+                <div class="card">
+
+
+                    <img src="img/work-1.jpg" alt="">
+                    <h3>heading</h3>
+                    <p id="para-3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus similique adipisci
+                        laudantium exercitationem sunt. Harum, consequatur! Blanditiis tempora, eaque quam dignissimos
+                        eveniet similique vero ratione.</p>
+                    <button id="details-3">Show Less</button>
+                </div>
+                <div class="card">
+
+
+                    <img src="img/work-1.jpg" alt="">
+                    <h3>heading</h3>
+                    <p id="para-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eligendi illo
+                        fugiat excepturi sed temporibus perferendis, ratione sit soluta consectetur itaque magnam quasi
+                        magni sunt?</p>
+                    <button id="details-4">Show Less</button>
+                </div>
+            </div>
+            <div class="sidebar">
+                <img src="img/arrow-up.png" alt="" id="upArrow">
+                <img src="img/arrow-down.png" alt="" id="downArrow">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ****************************************CONTACT************************************************ -->
+    <div class="conTACT">
+        <div id="contactimg">
+            <img src="img/contactPic.png" alt="">
+        </div>
+        <div id="contactinfo">
+
+            <div id="contactHeading">
+                <h2>Contact Me</h2>
+                <span id="line"></span>
+                <span><i class="fa-solid fa-paper-plane"></i>&nbsp;contact@example.com </span><span><i
+                        class="fa-solid fa-phone"></i>&nbsp;0123456789</span>
+            </div>
+
+
+
+            <!-- <div class="form"> -->
+
+            <div id="contactinfo-box">
+                <form action="">
+                    <div class="Name">
+
+                        <input type="text" id="name" placeholder="Your name" onkeyup="validateName()">
+                        <span id="name-error">
+                            <!-- name is required -->
+                        </span>
+                    </div>
+                    <div class="Email">
+
+                        <input type="email" id="email" placeholder="Your email id" onkeyup="validateEmail()">
+                        <span id="email-error">
+                            <!-- email is required -->
+                        </span>
+                    </div>
+                    <div class="Password">
+                        <input type="password" id="password" placeholder="Enter the password">
+                        <!-- <i class="fa-solid fa-eye-slash"></i> -->
+                        <img src="img/eye-close.png" alt="" id="eyeIcon">
+                        <!-- <span id="password-error">password is required</span> -->
+                    </div>
+                    <div class="Msg">
+
+                        <textarea name="" id="mssg" cols="30" rows="10" placeholder="Your Message"
+                            onkeyup="validateMsg()"></textarea>
+                        <span id="msg-error">
+                            <!-- message is required -->
+                        </span>
+                    </div>
+                    <div class="Submit">
+                        <input type="submit" id="submit" value="Submit">
+                        <span id="submit-error">
+                            <!-- Fix the error -->
+                        </span>
+                    </div>
+                </form>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+
+        let slide = document.getElementById('slide');
+        let upArrow = document.getElementById('upArrow');
+        let downArrow = document.getElementById('downArrow');
+        let x = 0;
+        downArrow.onclick = function () {
+            if (x > "-1650") {
+                x = x - 550;
+                slide.style.top = x + "px";
+                if (x == '-1650') {
+                    downArrow.style.display = 'none';
+                }
+
+            }
+        }
+        upArrow.onclick = function () {
+            if (x < 0) {
+                x = x + 550;
+                slide.style.top = x + "px";
+                if (x != '-1650') {
+                    downArrow.style.display = 'block';
+                }
+
+            }
+
+        }
+        let ReadMore1 = document.getElementById('details-1');
+        let para1 = document.getElementById('para-1');
+        ReadMore1.onclick = function () {
+            if (para1.style.display != 'none') {
+                para1.style.display = 'none';
+                ReadMore1.innerHTML = "Read More";
+            }
+            else {
+                para1.style.display = 'block';
+                ReadMore1.innerHTML = "Show Less";
+
+            }
+
+
+
+        }
+        let ReadMore2 = document.getElementById('details-2');
+        let para2 = document.getElementById('para-2');
+        ReadMore2.onclick = function () {
+            if (para2.style.display != 'none') {
+                para2.style.display = 'none';
+                ReadMore2.innerHTML = "Read More";
+            }
+            else {
+                para2.style.display = 'block';
+                ReadMore2.innerHTML = "Show Less";
+
+            }
+
+
+
+        }
+        let ReadMore3 = document.getElementById('details-3');
+        let para3 = document.getElementById('para-3');
+        ReadMore3.onclick = function () {
+            if (para3.style.display != 'none') {
+                para3.style.display = 'none';
+                ReadMore3.innerHTML = "Read More";
+            }
+            else {
+                para3.style.display = 'block';
+                ReadMore3.innerHTML = "Show Less";
+
+            }
+
+
+
+        }
+        let ReadMore4 = document.getElementById('details-4');
+        let para4 = document.getElementById('para-4');
+        ReadMore4.onclick = function () {
+            if (para4.style.display != 'none') {
+                para4.style.display = 'none';
+                ReadMore4.innerHTML = "Read More";
+            }
+            else {
+                para4.style.display = 'block';
+                ReadMore4.innerHTML = "Show Less";
+
+            }
+
+
+
+        }
+
+
+
+
+
+        // *****************************************************************************************************
+
+        let password = document.getElementById('password');
+        let eyeIcon = document.getElementById('eyeIcon');
+        eyeIcon.onclick = function () {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeIcon.src = "img/eye-open.png";
+            }
+            else {
+                password.type = "password";
+                eyeIcon.src = "img/eye-close.png";
+
+            }
+        }
+
+
+        let nameError = document.getElementById('name-error');
+        let emailError = document.getElementById('email-error');
+        let msgError = document.getElementById('msg-error');
+        function validateName() {
+            let contactName = document.getElementById('name').value;
+            if (contactName == "") {
+                nameError.innerHTML = '**Name is required';
+                return false;
+
+
+            }
+            if (!contactName.match(/^[A-Za-z]*\s{1}[A-Za-z]*$/)) {
+                nameError.innerHTML = '**Write full name ';
+                return false;
+
+            }
+            nameError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+
+        }
+        function validateEmail() {
+            let contactEmail = document.getElementById('email').value;
+
+            if (contactEmail == "") {
+                emailError.innerHTML = "**email is required";
+                return false;
+
+            }
+            if (!contactEmail.match(/^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/)) {
+                emailError.innerHTML = "**email invalid";
+                return false;
+
+            }
+            emailError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+            return true;
+
+
+        }
+
+        function validateMsg() {
+            let contactMsg = document.getElementById('mssg').value;
+            let required = 30;
+            let left = required - contactMsg.length;
+            if (left > 0) {
+                msgError.innerHTML = left + 'more characters required';
+                return false;
+
+            }
+            else {
+                msgError.innerHTML = '<i class="fa-solid fa-circle-check"></i>';
+                return true;
+
+            }
+
+        }
+
+        // ************************************************************************************************
+
+        AOS.init({
+            offset: 300,
+            duration: 1000
+        });
+
+
+
+    </script>
+</body>
+
+</html>
